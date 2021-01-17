@@ -1,0 +1,10 @@
+.home {
+  background-color: #f5f7fa;
+  min-height: calc(100vh - 8rem);
+  padding: 4rem 3.2rem;
+  &__title {
+    font-family: "Rubik";
+    font-weight: 300;
+    font-size: 3.9rem;
+  }
+}

@@ -1,0 +1,9 @@
+.sidebar-element {
+  padding: 2.4rem;
+  &__circle {
+    width: 2.4rem;
+    height: 2.4rem;
+    border: 3px solid #888991;
+    border-radius: 100%;
+  }
+}

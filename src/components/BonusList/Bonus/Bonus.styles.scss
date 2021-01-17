@@ -1,0 +1,96 @@
+.bonus {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 0.6rem;
+  padding: 2.4rem 3.2rem;
+  margin-top: 2.4rem;
+  border: 1px solid #e2e5ec;
+  display: flex;
+  &__info {
+    width: 42%;
+  }
+  &__title {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 2.9rem;
+    color: #000000;
+  }
+  &__description {
+    margin-top: 1rem;
+    color: #7d7d7d;
+    font-size: 1.5rem;
+  }
+  &__promocode {
+    width: 58%;
+    &-title {
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      color: #7d7d7d;
+    }
+    &-actions {
+      margin-top: 0.7rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    &-wrapper {
+      width: 47%;
+      position: relative;
+    }
+    &-input {
+      padding: 1.5rem 1.7rem;
+      width: 100%;
+      border: 1px solid #cfd2d9;
+      border-radius: 0.4rem;
+      font-size: 1.5rem;
+      color: #262626;
+      transition: all 0.3s;
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0.7rem #cfd2d9;
+      }
+    }
+    &-copy {
+      position: absolute;
+      right: 1.7rem;
+      top: 1.5rem;
+      cursor: pointer;
+    }
+    &-button {
+      width: 47%;
+      border: none;
+      background-color: #0085ff;
+      color: #ffffff;
+      border-radius: 0.4rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      outline: none;
+      &:disabled {
+        background-color: #888686;
+        cursor: not-allowed;
+      }
+      &:disabled:hover {
+        box-shadow: 0 0 0.7rem #888686;
+      }
+      &:focus,
+      &:active,
+      &:hover {
+        box-shadow: 0 0 0.7rem #0085ff;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .bonus {
+    flex-direction: column;
+    &__info {
+      width: 100%;
+      border-bottom: 1px solid #d1d0d0;
+      padding-bottom: 1.5rem;
+    }
+    &__promocode {
+      padding-top: 1.5rem;
+      width: 100%;
+    }
+  }
+}
